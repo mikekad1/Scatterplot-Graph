@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
+
+body {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Bodoni Moda', serif;
+  color: white;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+svg {
+
+}
+
+
+.container {
+  position: relative;
+}
+
+.tooltip {
+  background-color: #e84393;
+  display: none;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  height: 85px;
+  width: 200px;
+  z-index: 100;
+  text-align: start;
+  font-size: 14px;
+  border-radius: 5px 5px 5px 5px;
+  padding-left: 7px;
+  opacity: 0.5;
+}
+
+.tooltip.show {
+  display: flex;
+}
+
+.tooltip small {
+  margin-bottom: 5px;
+}
+
+#legend {
+  display: block;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -80px;
+  top: 150px;
+}
+
+.description {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  font-size: 12px;
+}
+
+.description p {
+  margin: 5px;
+  postion: relative;
+}
+
+.description .box.pink {
+  background-color: #e84393; 
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: -20px
+}
+
+.description .box.blue {
+  background-color: #00cec9; 
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
